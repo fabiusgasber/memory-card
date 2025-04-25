@@ -25,8 +25,12 @@ const Gameboard = () => {
   return (
     <main>
     <section>
+        <span>Score: {score} </span>
+        <span>Highscore: {highScore} </span>
+    </section>
+    <section>
       {data ? (
-        data.map((teams) => <Cards key={teams.team.uid} url={teams.team.logos[0].href} name={teams.team.displayName} onClick={() => setData(randomizeArray(data))} />)
+        data.map((teams) => <Cards key={teams.team.uid} url={teams.team.logos[0].href} name={teams.team.displayName} onClick={handleClick} />)
       ) : (
         <h1>...Loading</h1>
       )}

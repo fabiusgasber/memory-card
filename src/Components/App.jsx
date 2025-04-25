@@ -1,5 +1,4 @@
 import "../Stylesheets/App.css";
-import Scoreboard from "./Scoreboard";
 import Gameboard from "./Gameboard";
 
 function App() {
