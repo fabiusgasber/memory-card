@@ -1,5 +1,3 @@
-import { useEffect } from "react";
-import { useState } from "react";
 import Cards from "./Cards";
 import "../Stylesheets/Gameboard.css"
 import { randomizeArray, useFetch } from "./fetch"
