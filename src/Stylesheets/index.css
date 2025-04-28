@@ -1,11 +1,11 @@
 @font-face {
   font-family: orbitron;
-  src: url(fonts/Orbitron/Orbitron-VariableFont_wght.ttf);
+  src: url(../../public/fonts/Orbitron/Orbitron-VariableFont_wght.ttf);
 }
 
 @font-face {
   font-family: bebas;
-  src: url(fonts/Bebas_Neue/BebasNeue-Regular.ttf);
+  src: url(../../public/fonts/Bebas_Neue/BebasNeue-Regular.ttf);
 }
 
 :root {
