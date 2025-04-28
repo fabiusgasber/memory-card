@@ -44,9 +44,15 @@ const Gameboard = () => {
 
   return (
     <main>
-    <section>
-        <span>Score: {score} </span>
-        <span>Highscore: {highScore} </span>
+    <section className="scoreboard">
+      <div>
+        <label htmlFor="score">Score: </label>
+        <output id="score">{score} </output>
+      </div>
+      <div>
+        <label htmlFor="highscore">Highscore: </label>
+        <output id="highscore">{highScore} </output>
+      </div>
     </section>
     <section>
       {data ? (
