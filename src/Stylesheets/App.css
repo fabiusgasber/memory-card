@@ -7,6 +7,9 @@
 
 h1 {
   letter-spacing: 0.5rem;
-  text-shadow: 0 0 10px #00ffe1, 0 0 20px #00ffe1, 0 0 30px #00ffe1;
+  text-shadow:
+    0 0 10px #00ffe1,
+    0 0 20px #00ffe1,
+    0 0 30px #00ffe1;
   font-size: 3rem;
 }
