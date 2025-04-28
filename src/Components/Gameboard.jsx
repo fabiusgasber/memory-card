@@ -40,18 +40,21 @@ const Gameboard = () => {
           setReload(!reload);
       }  
     }
+    const figures = Array.from(document.querySelectorAll("figure"));
+    const first = figures.find(elem => elem.getAttribute("data-id") === data[0].team.uid);
+    first?.closest("button").focus();
    }
 
   return (
-    <main>
+    <>
     <section className="scoreboard">
-      <div>
+      <div tabIndex={0}>
         <label htmlFor="score">Score: </label>
-        <output id="score">{score} </output>
+        <output id="score">{score}</output>
       </div>
-      <div>
+      <div tabIndex={0}>
         <label htmlFor="highscore">Highscore: </label>
-        <output id="highscore">{highScore} </output>
+        <output id="highscore">{highScore}</output>
       </div>
     </section>
     <section>
@@ -61,7 +64,7 @@ const Gameboard = () => {
         <h1>...Loading</h1>
       )}
       </section>
-    </main>
+    </>
   );
 };
 

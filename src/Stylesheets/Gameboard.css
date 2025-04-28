@@ -20,9 +20,17 @@ figure {
     letter-spacing: 2px;
 }
 
+figcaption {
+    font-size: 20px;
+}
+
 figure img {
     width: 150px;
     height: auto;
+}
+
+button:focus {
+    outline: none;
 }
 
 figure:hover {

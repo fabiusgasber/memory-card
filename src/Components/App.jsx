@@ -4,8 +4,12 @@ import Gameboard from "./Gameboard";
 function App() {
   return (
     <>
-      <h1>Gridiron Memory</h1>
-      <Gameboard />
+    <header>
+    <h1>Gridiron Memory</h1>
+    </header>
+    <main>
+    <Gameboard />
+    </main>
     </>
   );
 }
