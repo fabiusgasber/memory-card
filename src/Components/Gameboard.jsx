@@ -14,7 +14,7 @@ const Gameboard = () => {
    const addSelected = (id) => setSelected((selected) => [...selected, id]);
 
    const handleClick = (e) => {
-    const id = e.target.closest("figure").getAttribute("data-id");
+    const id = e.target.closest("button").getAttribute("data-id");
     if(wasSelected(id) && isHighscore()) {
       setHighscore(score);
       resetScore();
@@ -40,9 +40,9 @@ const Gameboard = () => {
           setReload(!reload);
       }  
     }
-    const figures = Array.from(document.querySelectorAll("figure"));
-    const first = figures.find(elem => elem.getAttribute("data-id") === data[0].team.uid);
-    first?.closest("button").focus();
+    const cards = Array.from(document.querySelectorAll("main button"));
+    const firstCard = cards.find(elem => elem.getAttribute("data-id") === data[0].team.uid);
+    firstCard?.closest("button").focus();
    }
 
   return (
