@@ -18,7 +18,7 @@ export function useFetch() {
       let isMounted = true;
       const result = await fetchData(ENDPOINT);
       const teams = result?.sports[0]?.leagues[0]?.teams;
-      if(teams && isMounted) setData(randomizeArray(teams)); 
+      if(teams && isMounted) setData([...randomizeArray(teams)]); 
       return () => {
         isMounted = false;
       }
@@ -30,5 +30,5 @@ export function useFetch() {
 }
 
 export const randomizeArray = (arr, count = 9) => {
-   return [...arr.sort(() => Math.random() - Math.random()).slice(0, count)];
+   return arr.sort(() => Math.random() - Math.random()).slice(0, count);
 }

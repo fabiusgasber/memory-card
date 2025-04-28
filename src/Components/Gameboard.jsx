@@ -20,14 +20,16 @@ const Gameboard = () => {
       resetScore();
       setReload(!reload);
       setSelected([]);
+      setData(null);
     }
     else if(wasSelected(id)){
       resetScore();
       setReload(!reload);
       setSelected([]);
+      setData(null);
     }
     else if(!wasSelected(id)){
-      setData(randomizeArray(data));
+      setData([...randomizeArray(data)]);
       if(score + 1 < data.length) {
           wonRound();
           addSelected(id);
@@ -38,6 +40,7 @@ const Gameboard = () => {
           }
           resetScore();
           setReload(!reload);
+          setData(null);
       }  
     }
     const cards = Array.from(document.querySelectorAll("main button"));
