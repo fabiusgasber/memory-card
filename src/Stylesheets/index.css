@@ -1,11 +1,16 @@
 @font-face {
   font-family: orbitron;
-  src: url(../../public/fonts/Orbitron/Orbitron-VariableFont_wght.ttf);
+  src: url(/fonts/Orbitron/Orbitron-VariableFont_wght.ttf);
 }
 
 @font-face {
   font-family: bebas;
-  src: url(../../public/fonts/Bebas_Neue/BebasNeue-Regular.ttf);
+  src: url(/fonts/Bebas_Neue/BebasNeue-Regular.ttf);
+}
+
+@font-face {
+  font-family: poppins;
+  src: url(/fonts/Poppins/Poppins-Regular.ttf);
 }
 
 :root {
@@ -28,4 +33,8 @@ button {
   border: none;
   padding: 0;
   margin: 0;
+}
+
+main p {
+  font-family: poppins system-ui, Avenir, Helvetica, Arial, sans-serif;
 }
