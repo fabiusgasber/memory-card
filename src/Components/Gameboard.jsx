@@ -64,7 +64,7 @@ const Gameboard = () => {
       {data ? (
         data.map((teams) => <Cards key={teams.team.uid} uid={teams.team.uid} url={teams.team.logos[0].href} name={teams.team.displayName} onClick={handleClick} />)
       ) : (
-        <h1>...Loading</h1>
+        <h2>...Loading</h2>
       )}
       </section>
     </>
